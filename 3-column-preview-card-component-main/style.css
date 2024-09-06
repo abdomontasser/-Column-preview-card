@@ -1,0 +1,140 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+:root
+{
+--orange: hsl(31, 77%, 52%);
+--Dark_cyan: hsl(184, 100%, 22%);
+ --dark_cyan: hsl(179, 100%, 13%);
+ --transparent_white:hsla(0, 0%, 100%, 0.75);
+}
+.FlexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    height: 80vh;
+    overflow: auto;
+    flex-direction: row;
+}
+
+.FlexContainer div {
+    width: 230px;
+    height: 370px;
+    margin: 1px;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+h1
+{
+    margin-left: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+p
+{
+    margin: 20px 10px;
+    text-align: left;
+    font-size: 14px;
+    display: block;
+    color: var(--transparent_white);
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.6;
+    word-spacing: normal;
+}
+button
+{
+margin: 20px;
+padding: 10px 15px;
+border: 20px;
+border-radius: 20px;
+text-transform: capitalize;
+font-family: "Lexend Deca", sans-serif;
+cursor: pointer;
+}
+.seadan
+{
+background-color: var(--orange);
+}
+.suv
+{
+background-color: var(--Dark_cyan);
+}
+.Luxury
+{
+background-color: var(--dark_cyan);
+}
+img
+{
+margin: 15px 20px;
+}
+.seadan button
+{
+    color: var(--orange);
+}
+.suv button
+{
+    color: var(--Dark_cyan);
+}
+.Luxury button
+{
+    color: var(--dark_cyan);
+}
+
+/*
+Add the Responsive desgin
+*/
+
+@media (max-width: 768px) {
+    .FlexContainer {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .FlexContainer div {
+        width: 200px;
+        height: auto; 
+    }
+
+    h1 {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    button {
+        margin: 10px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
